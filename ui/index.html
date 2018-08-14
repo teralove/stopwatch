@@ -1,0 +1,29 @@
+<html>
+<head>
+	<script>
+		window.addEventListener('error', function (e) {
+			_tera_client_proxy_.alert('err: ' + e.message + ' ' + e.filename + ':' + e.lineno);
+		});
+
+		window.onload = function () {
+			_tera_client_proxy_.resize_to(380, 140);
+			_tera_client_proxy_.set_title('Stopwatch');
+		};
+	</script>
+	<script src="stopwatch.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <TITLE>Stopwatch</TITLE>
+</head>
+
+<BODY id="body">
+    <div>
+        <output id="time-display">00:00.000</output>
+    </div>
+    <div id="button-container">
+        <button id="button" onClick="start()">Start</button>
+        <button id="button" onClick="stop()">Stop</button>
+        <button id="button" onClick="reset()">Reset</button>
+    </div>
+</BODY>
+
+</html>

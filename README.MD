@@ -4,6 +4,7 @@ In-game stopwatch timer. Requires [the UI module](https://github.com/pinkipi/ui)
 
 ## Command
 ### `stopwatch`
+- Opens the ui.
 
 ---
 
